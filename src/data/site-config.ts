@@ -10,7 +10,7 @@ const siteConfig: SiteConfig = {
     },
     title: 'Abhiket Gaurav',
     subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
-    description: ''I am interested in how we organize information and how information organizes us.',
+    description: 'I am interested in how we organize information and how information organizes us.',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Abhiket Gaurav'
@@ -45,32 +45,25 @@ const siteConfig: SiteConfig = {
         {
             text: 'Terms',
             href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/abhiketg/'
         },
         {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'GitHub',
+            href: 'https://github.com/abhiket'
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence.\nMy approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products.\nI have a profound appreciation for top-notch software, visual design, and the principles of product-led growth.\n\nFeel free to explore some of my coding endeavors on [GitHub](https://github.com/JustGoodUI/dante-astro-theme) or follow me on [Twitter/X](https://twitter.com/justgoodui).",
+        title: 'Abhiket Gaurav',
+        subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
+        text: "I am interested in how we organize information and how information organizes us. This is a space for my notes on the evolution of intelligence—both the artificial kind I build, and the human kind I live.",
         image: {
             src: hero,
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: 'Evolution of Intelligence'
         },
         actions: [
             {
@@ -80,9 +73,9 @@ const siteConfig: SiteConfig = {
         ]
     },
     subscribe: {
-        enabled: true,
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        enabled: false,
+        title: 'Subscribe',
+        text: 'One update per week.',
         form: {
             action: '#'
         }
