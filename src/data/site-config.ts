@@ -13,7 +13,7 @@ const siteConfig: SiteConfig = {
         { text: 'Projects', href: '/projects' },
         { text: 'Blog', href: '/blog' }
     ],
-    footerNavLinks: [], // Removed About and Contact
+    footerNavLinks: [], 
     socialLinks: [
         { text: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiketg/' },
         { text: 'GitHub', href: 'https://github.com/abhiket' }
