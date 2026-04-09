@@ -10,25 +10,30 @@ const siteConfig: SiteConfig = {
     },
     title: 'Abhiket Gaurav',
     subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
-    description: 'I am interested in how we organize information and how information organizes us.',
+    description: 'Exploring the intersection of artificial intelligence and human experience.',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Abhiket Gaurav'
     },
     headerNavLinks: [
         { text: 'Home', href: '/' },
-        { text: 'About', href: '/about' },
-        { text: 'Contact', href: '/contact' }
+        { text: 'Projects', href: '/projects' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Tags', href: '/tags' }
     ],
     footerNavLinks: [
+        { text: 'About', href: '/about' },
+        { text: 'Contact', href: '/contact' },
+        { text: 'Terms', href: '/terms' }
+    ],
+    socialLinks: [
         { text: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiketg/' },
         { text: 'GitHub', href: 'https://github.com/abhiket' }
     ],
-    socialLinks: [], 
     hero: {
-        title: 'Hello and welcome!',
+        title: 'Abhiket Gaurav',
         subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
-        text: "I am interested in how we organize information and how information organizes us. This is a space for my notes on the evolution of intelligence—both the artificial kind I build, and the human kind I live. \n\n Thanks for stopping by.",
+        text: "Hello and welcome.\n\nI am fascinated by how we organize information and how, in turn, information organizes us. This is a space for my notes on the evolution of intelligence—bridging the artificial systems I architect with the human experience I live.\n\nI’m glad you’re here. Let’s connect to explore what’s next.",
         image: {
             src: hero,
             alt: 'Abhiket Gaurav'
