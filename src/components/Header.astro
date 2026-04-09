@@ -2,9 +2,8 @@
 import siteConfig from '../data/site-config';
 ---
 
-<header class="w-full py-8 flex items-center justify-end relative z-50">
-  
-  <nav class="ml-auto flex items-center gap-6 sm:gap-8">
+<header class="w-full max-w-7xl mx-auto py-8 px-6 lg:px-8 flex items-center justify-end relative z-50">
+  <nav>
     <ul class="flex items-center gap-6 sm:gap-8 m-0 p-0 list-none">
       {
         siteConfig.headerNavLinks.map((link) => (
@@ -20,5 +19,4 @@ import siteConfig from '../data/site-config';
       }
     </ul>
   </nav>
-  
 </header>
