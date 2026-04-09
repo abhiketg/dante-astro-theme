@@ -13,7 +13,7 @@ const siteConfig: SiteConfig = {
         { text: 'Projects', href: '/projects' },
         { text: 'Blog', href: '/blog' }
     ],
-    footerNavLinks: [], 
+    footerNavLinks: [], // Emptied to remove "About" and "Contact" from the footer
     socialLinks: [
         { text: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiketg/' },
         { text: 'GitHub', href: 'https://github.com/abhiket' }
@@ -27,7 +27,7 @@ const siteConfig: SiteConfig = {
             alt: 'Abhiket Gaurav'
         },
         actions: [
-            { text: 'Get in Touch', href: '/contact' }
+            { text: 'Get in Touch', href: '/contact' } // Button restored
         ]
     },
     postsPerPage: 8,
