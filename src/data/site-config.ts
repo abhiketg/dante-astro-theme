@@ -8,10 +8,9 @@ const siteConfig: SiteConfig = {
         src: avatar,
         alt: 'Abhiket Gaurav'
     },
-    // We leave these empty to stop the name appearing twice on the homepage
-    title: '', 
+    title: '', // Kept empty to avoid header redundancy
     subtitle: '', 
-    description: 'Exploring the intersection of artificial intelligence and human experience.',
+    description: 'I am interested in how we organize information and how information organizes us.',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Abhiket Gaurav'
@@ -39,12 +38,7 @@ const siteConfig: SiteConfig = {
             src: hero,
             alt: 'Abhiket Gaurav'
         },
-        actions: [
-            {
-                text: 'Get in Touch',
-                href: '/contact'
-            }
-        ]
+        actions: [] // Empty for the clean Josh Comeau aesthetic
     },
     subscribe: {
         enabled: false,
