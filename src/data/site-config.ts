@@ -1,16 +1,16 @@
-import avatar from '../assets/images/avatar.jpg';
 import hero from '../assets/images/hero.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
     website: 'https://abhiketgaurav.com',
+    // Avatar left empty to avoid header redundancy
     avatar: {
-        src: avatar,
-        alt: 'Abhiket Gaurav'
+        src: '', 
+        alt: ''
     },
-    title: '', // Kept empty to avoid header redundancy
+    title: '', 
     subtitle: '', 
-    description: 'I am interested in how we organize information and how information organizes us.',
+    description: 'Exploring the intersection of artificial intelligence and human experience.',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Abhiket Gaurav'
@@ -23,8 +23,7 @@ const siteConfig: SiteConfig = {
     ],
     footerNavLinks: [
         { text: 'About', href: '/about' },
-        { text: 'Contact', href: '/contact' },
-        { text: 'Terms', href: '/terms' }
+        { text: 'Contact', href: '/contact' }
     ],
     socialLinks: [
         { text: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiketg/' },
@@ -37,14 +36,7 @@ const siteConfig: SiteConfig = {
         image: {
             src: hero,
             alt: 'Abhiket Gaurav'
-        },
-        actions: [] // Empty for the clean Josh Comeau aesthetic
-    },
-    subscribe: {
-        enabled: false,
-        title: 'Subscribe',
-        text: 'One update per week.',
-        form: { action: '#' }
+        }
     },
     postsPerPage: 8,
     projectsPerPage: 8
