@@ -3,17 +3,17 @@ import hero from '../assets/images/hero.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
-    website: 'https://example.com',
+    website: 'https://abhiketgaurav.com',
     avatar: {
         src: avatar,
-        alt: 'Ethan Donovan'
+        alt: 'Abhiket Gaurav'
     },
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Abhiket Gaurav',
+    subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
+    description: ''I am interested in how we organize information and how information organizes us.',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: 'Abhiket Gaurav'
     },
     headerNavLinks: [
         {
