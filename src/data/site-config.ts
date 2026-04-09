@@ -8,9 +8,10 @@ const siteConfig: SiteConfig = {
         src: avatar,
         alt: 'Abhiket Gaurav'
     },
-    title: 'Abhiket Gaurav',
-    subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
-    description: 'I am interested in how we organize information and how information organizes us.',
+    // We leave these empty to stop the name appearing twice on the homepage
+    title: '', 
+    subtitle: '', 
+    description: 'Exploring the intersection of artificial intelligence and human experience.',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Abhiket Gaurav'
@@ -33,7 +34,7 @@ const siteConfig: SiteConfig = {
     hero: {
         title: 'Abhiket Gaurav',
         subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
-        text: "Hello and welcome!\n\nI am interested in how we organize information and how information organizes us. This is a space for my notes on the evolution of intelligence—both the artificial kind I build, and the human kind I live.\n\nThanks for stopping by. Let's connect for future collaborations.",
+        text: "Hello and welcome.\n\nI am fascinated by how we organize information and how, in turn, information organizes us. This is a space for my notes on the evolution of intelligence—bridging the artificial systems I architect with the human experience I live.\n\nI’m glad you’re here. Let’s connect to explore what’s next.",
         image: {
             src: hero,
             alt: 'Abhiket Gaurav'
