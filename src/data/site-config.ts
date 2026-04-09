@@ -58,7 +58,7 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'Abhiket Gaurav',
+        title: '', 
         subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
         text: "I am interested in how we organize information and how information organizes us. This is a space for my notes on the evolution of intelligence—both the artificial kind I build, and the human kind I live.",
         image: {
