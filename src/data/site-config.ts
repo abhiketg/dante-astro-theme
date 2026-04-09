@@ -16,54 +16,22 @@ const siteConfig: SiteConfig = {
         alt: 'Abhiket Gaurav'
     },
     headerNavLinks: [
-        {
-            text: 'Home',
-            href: '/'
-        },
-        {
-            text: 'Projects',
-            href: '/projects'
-        },
-        {
-            text: 'Blog',
-            href: '/blog'
-        },
-        {
-            text: 'Tags',
-            href: '/tags'
-        }
+        { text: 'Home', href: '/' },
+        { text: 'About', href: '/about' },
+        { text: 'Contact', href: '/contact' }
     ],
     footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
-        },
-        {
-            text: 'Contact',
-            href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        }
+        { text: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiketg/' },
+        { text: 'GitHub', href: 'https://github.com/abhiket' }
     ],
-    socialLinks: [
-        {
-            text: 'LinkedIn',
-            href: 'https://www.linkedin.com/in/abhiketg/'
-        },
-        {
-            text: 'GitHub',
-            href: 'https://github.com/abhiket'
-        }
-    ],
+    socialLinks: [], 
     hero: {
-        title: 'Abhiket Gaurav',
+        title: 'Hello and welcome!',
         subtitle: 'Analytics Leader | AI Explorer | Lifelong Learner | Human',
-        text: "I am interested in how we organize information and how information organizes us. This is a space for my notes on the evolution of intelligence—both the artificial kind I build, and the human kind I live.",
+        text: "I am interested in how we organize information and how information organizes us. This is a space for my notes on the evolution of intelligence—both the artificial kind I build, and the human kind I live. \n\n Thanks for stopping by.",
         image: {
             src: hero,
-            alt: 'Abhiket Gaurav - Evolution of Intelligence'
+            alt: 'Abhiket Gaurav'
         },
         actions: [
             {
@@ -76,9 +44,7 @@ const siteConfig: SiteConfig = {
         enabled: false,
         title: 'Subscribe',
         text: 'One update per week.',
-        form: {
-            action: '#'
-        }
+        form: { action: '#' }
     },
     postsPerPage: 8,
     projectsPerPage: 8
