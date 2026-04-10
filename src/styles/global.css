@@ -1,36 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind v4 syntax */
+@import "tailwindcss";
 
-/* We use pure CSS here instead of Tailwind's @apply.
-  This prevents the Dante theme's strict config from crashing the build.
-*/
+@theme {
+  --font-serif: "EB Garamond", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
 
+/* Pure CSS overrides */
 body {
   background-color: #FAF9F6;
   color: #111111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'EB Garamond', ui-serif, Georgia, serif;
+  font-family: var(--font-serif);
 }
 
-/* Custom highlight color when you drag your mouse over text */
 ::selection {
   background-color: #111111;
   color: #FAF9F6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -0.025em; /* This is the pure CSS equivalent of tracking-tight */
-  font-family: 'EB Garamond', ui-serif, Georgia, serif;
+  letter-spacing: -0.025em;
+  font-family: var(--font-serif);
 }
 
-code, pre, .font-mono {
+code, pre {
   font-size: 0.875rem; 
   letter-spacing: 0.05em; 
-  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+  font-family: var(--font-mono) !important;
 }
 
 /* Custom Scrollbar for the minimal look */
