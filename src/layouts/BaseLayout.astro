@@ -1,35 +1,37 @@
 ---
-import { ClientRouter } from 'astro:transitions';
-import BaseHead, { type Props as HeadProps } from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Nav from '../components/Nav.astro';
-
-export type Props = HeadProps & { showHeader?: boolean };
-
-const { showHeader = true, ...head } = Astro.props;
+import '../styles/global.css'; // Ensure this points to your CSS file
 ---
 
-<!doctype html>
-<html lang="en" class="wrap-break-words antialiased">
-    <head>
-        <BaseHead {...head} />
-        <script>
-            if (localStorage.theme === 'dark') {
-                document.documentElement.classList.add('dark');
-            }
-        </script>
-        <ClientRouter />
-        <script is:inline src="/theme-toggle.js"></script>
-    </head>
-    <body class="bg-main text-main">
-        <div class="flex min-h-screen flex-col px-4 md:px-8">
-            <Nav />
-            {showHeader && <Header />}
-            <main class="mx-auto w-full max-w-3xl grow">
-                <slot />
-            </main>
-            <Footer />
-        </div>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Abhiket | The Analytical Sanctuary</title>
+  </head>
+  <body class="bg-[#FAF9F6] text-[#111111] min-h-screen flex">
+    
+    <aside class="fixed top-0 left-0 h-screen w-16 md:w-24 border-r border-[#111111]/20 flex flex-col items-center justify-between py-12 z-50 bg-[#FAF9F6]">
+      
+      <a href="/" class="font-serif font-bold text-xl hover:opacity-50 transition-opacity">AG</a>
+
+      <nav class="flex flex-col gap-12 text-center">
+        <a href="/lab" class="font-serif text-sm font-bold hover:italic relative group" title="Intelligence">I<span class="absolute left-10 opacity-0 group-hover:opacity-100 font-sans text-xs tracking-widest uppercase transition-opacity whitespace-nowrap">Lab</span></a>
+        
+        <a href="/ledger" class="font-serif text-sm font-bold hover:italic relative group" title="Capital">II<span class="absolute left-10 opacity-0 group-hover:opacity-100 font-sans text-xs tracking-widest uppercase transition-opacity whitespace-nowrap">Ledger</span></a>
+        
+        <a href="/library" class="font-serif text-sm font-bold hover:italic relative group" title="Wisdom">III<span class="absolute left-10 opacity-0 group-hover:opacity-100 font-sans text-xs tracking-widest uppercase transition-opacity whitespace-nowrap">Library</span></a>
+        
+        <a href="/lattice" class="font-serif text-sm font-bold hover:italic relative group" title="Practice">IV<span class="absolute left-10 opacity-0 group-hover:opacity-100 font-sans text-xs tracking-widest uppercase transition-opacity whitespace-nowrap">Lattice</span></a>
+        
+        <a href="/legacy" class="font-serif text-sm font-bold hover:italic relative group" title="Genesis">V<span class="absolute left-10 opacity-0 group-hover:opacity-100 font-sans text-xs tracking-widest uppercase transition-opacity whitespace-nowrap">Legacy</span></a>
+      </nav>
+
+      <div class="h-6 w-px bg-[#111111]/20"></div>
+    </aside>
+
+    <main class="ml-16 md:ml-24 flex-1 min-h-screen w-full relative overflow-x-hidden">
+      <slot />
+    </main>
+
+  </body>
 </html>
