@@ -4,31 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-[#FAF9F6] text-[#111111] antialiased selection:bg-[#111111] selection:text-[#FAF9F6];
-    font-family: 'EB Garamond', ui-serif, Georgia, serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply tracking-tight;
-    font-family: 'EB Garamond', ui-serif, Georgia, serif;
-  }
+/* We use pure CSS here instead of Tailwind's @apply.
+  This prevents the Dante theme's strict config from crashing the build.
+*/
 
-  code, pre {
-    @apply text-sm tracking-wider;
-    font-family: 'JetBrains Mono', ui-monospace, monospace;
-  }
+body {
+  background-color: #FAF9F6;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'EB Garamond', ui-serif, Georgia, serif;
 }
 
-/* Forcing the classes to exist just in case Dante deleted them */
-@layer utilities {
-  .font-serif {
-    font-family: 'EB Garamond', ui-serif, Georgia, serif !important;
-  }
-  .font-mono {
-    font-family: 'JetBrains Mono', ui-monospace, monospace !important;
-  }
+/* Custom highlight color when you drag your mouse over text */
+::selection {
+  background-color: #111111;
+  color: #FAF9F6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em; /* This is the pure CSS equivalent of tracking-tight */
+  font-family: 'EB Garamond', ui-serif, Georgia, serif;
+}
+
+code, pre, .font-mono {
+  font-size: 0.875rem; 
+  letter-spacing: 0.05em; 
+  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
 }
 
 /* Custom Scrollbar for the minimal look */
