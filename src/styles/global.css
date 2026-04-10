@@ -6,16 +6,28 @@
 
 @layer base {
   body {
-    @apply bg-[#FAF9F6] text-[#111111] font-serif antialiased selection:bg-[#111111] selection:text-[#FAF9F6];
-    /* Forcing the Parchment and Ink aesthetic globally */
+    @apply bg-[#FAF9F6] text-[#111111] antialiased selection:bg-[#111111] selection:text-[#FAF9F6];
+    font-family: 'EB Garamond', ui-serif, Georgia, serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight;
+    @apply tracking-tight;
+    font-family: 'EB Garamond', ui-serif, Georgia, serif;
   }
 
-  code, pre, .font-mono {
-    @apply font-mono text-sm tracking-wider;
+  code, pre {
+    @apply text-sm tracking-wider;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+}
+
+/* Forcing the classes to exist just in case Dante deleted them */
+@layer utilities {
+  .font-serif {
+    font-family: 'EB Garamond', ui-serif, Georgia, serif !important;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, monospace !important;
   }
 }
 
